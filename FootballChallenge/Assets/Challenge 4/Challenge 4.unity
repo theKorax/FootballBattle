@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!198 &8784132 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4392870381175910774, guid: 6562db3a873684fa9b7da3aef8329d82, type: 3}
+  m_PrefabInstance: {fileID: 258741155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8784133 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4392870381195268594, guid: 6562db3a873684fa9b7da3aef8329d82, type: 3}
@@ -430,11 +435,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4392870381195268594, guid: 6562db3a873684fa9b7da3aef8329d82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.02
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4392870381195268594, guid: 6562db3a873684fa9b7da3aef8329d82, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4392870381195268594, guid: 6562db3a873684fa9b7da3aef8329d82, type: 3}
       propertyPath: m_LocalRotation.w
@@ -622,7 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPowerup: 0
   powerupIndicator: {fileID: 1427939658}
-  smokeParticle: {fileID: 4392870381175910774, guid: 6562db3a873684fa9b7da3aef8329d82, type: 3}
+  smokeParticle: {fileID: 8784132}
   powerUpDuration: 5
 --- !u!1 &680832294
 GameObject:
