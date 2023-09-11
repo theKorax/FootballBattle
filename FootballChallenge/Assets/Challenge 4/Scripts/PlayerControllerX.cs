@@ -35,7 +35,7 @@ public class PlayerControllerX : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             smokeParticle.Play();
-            playerRb.AddForce(focalPoint.transform.forward * turboBoost * Time.deltaTime);
+            playerRb.AddForce(focalPoint.transform.forward * turboBoost * Time.deltaTime, ForceMode.Impulse);
         }
 
     }
