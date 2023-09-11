@@ -6,6 +6,7 @@ public class SpawnManagerX : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public GameObject powerupPrefab;
+    private EnemyX enemy;
 
     private float spawnRangeX = 10;
     private float spawnZMin = 15; // set min spawn Z
@@ -16,6 +17,11 @@ public class SpawnManagerX : MonoBehaviour
 
 
     public GameObject player; 
+
+    void Start()
+    {
+        enemy = GameObject.Find("Enemy").GetComponent<EnemyX>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -55,6 +61,7 @@ public class SpawnManagerX : MonoBehaviour
         }
 
         waveCount++;
+        enemy.speed += 50; // increases enemy speed by a little every time a new wave is spawned
         ResetPlayerPosition(); // put player back at start
 
     }
