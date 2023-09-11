@@ -13,7 +13,7 @@ public class SpawnManagerX : MonoBehaviour
 
     public int enemyCount;
     public int waveCount = 1;
-    private float enemySpeedIncrement;
+    public float enemySpeedIncrement = 0.0f;
 
 
     public GameObject player; 
